@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+   
+  }
+
+.container{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background: linear-gradient(to right, #c7dfea, #f9f9f9, #8bd1ed);   
+}
+
+.header{
+    white-space: pre-wrap;
+     padding-right: 0px;
+     font-size: 30px;
+     position: relative;
+     bottom: -50px;
+     right: -60px;
+}
+.header .headtext {
+    background: linear-gradient(to right, #3f12f7, #ffffff,#66b1e3); 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+  }
+
+.vector{
+width: 5%;
+height: 10%;
+position: relative;
+top: 508px;
+left: 60px;
+}
+.logo1{
+    width: 70%;
+    height: 70%;
+}
+.link{
+    position: relative;
+    top: 445px;
+    left: 110px;
+}
+
+.content{
+    width: 70%;
+    height: 80%;
+    background-color:#EEEEEE;
+    position: relative;
+    bottom: 151px;
+    left: 400px;
+    border: #EEEEEE;
+    border-radius: 10px;
+   
+    
+}
+.aa1{
+    position: relative;
+    bottom: 0px;
+}
+.box1{
+    height: 642px;
+    width: 13%;
+    background-color:#FFFFFF ;
+    position: absolute;
+    top: -2px;
+    border: #FFFFFF;
+    border-radius: 10px 0px 0px 10px;
+   
+
+}
+
+.logobox{
+    width: 60%;
+    height: 10%;
+    position: relative;
+    left: 23px;
+    top: 20px;
+}
+
+.logo2{
+    width: 110%;
+    height: 110%;
+}
+.list{
+    display:grid;
+    color: #DBD8E3;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 33px;
+    padding: 5px;
+}
+.ruler{
+    width: 80%;
+    position: relative;
+    bottom: 16px;
+    left: 7px;
+    color: #DBD8E3;
+    
+}
+.bill{
+    width: 100%;
+    border: #8e7bf6;
+    border-radius: 40px;
+    background-color: #cfc8f1;
+    padding: 5px 20px 5px 20px;
+    color: #5338f1;    
+}
+
+.container1 h3{
+    margin-left: 100px;
+    position: relative;
+    left: 60px;
+}
+.container1 p{
+    margin-left: 100px;
+    position: relative;
+    left: 60px;
+    color: #dbd8e5;
+}
+.content1{
+    position: relative;
+    top: 30px;
+    left: 220px;
+}
+.content2{
+    width: 48%;
+    height: 90px;
+    background-color: #ffffff;
+    position: relative;
+    left: 220px;
+    top: 50px;
+    border:#ffffff ;
+    border-radius: 10px;
+
+}
+.conlogo{
+    width: 40px;
+    height: 40px;
+    background-color: #F9F2ED;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border: #F9F2ED;
+    border-radius: 5px;
+ 
+}
+.doclogo{
+    position: relative;
+    top: 8px;
+    left: 13px;
+    color: #FF7F3F;
+}
+
+.pro{
+    position: relative;
+    top: -20px;
+    left: 68px;
+    color:#65626e ;
+}
+.ruler1{
+    width: 50px;
+    transform: rotate(90deg);
+    position: relative;
+    left: 100px;
+    top: -36px;
+}
+
+.conlogo1{
+    width: 40px;
+    height: 40px;
+    background-color: #daffec;
+    position: relative;
+    top: -59px;
+    left: 140px;
+    border: #daffec;
+    border-radius: 5px;
+ 
+}
+.reqlogo{
+    position: relative;
+    top: 8px;
+    left: 13px;
+    color: #04be26;
+}
+.req{
+    position: relative;
+    top: -98px;
+    right: -191px;
+    color:#65626e ;
+}
+.ruler2{
+    width: 50px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -111px;
+    right: -233px;
+}
+
+.conlogo2{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(213, 100%, 87%);
+    position: relative;
+    top: -135px;
+    left: 275px;
+    border: #daffec;
+    border-radius: 5px;
+ 
+}
+.userlogo{
+    position: relative;
+    top: 8px;
+    left: 13px;
+    color: #0095ff;
+}
+.user{
+    position: relative;
+    top: -174px;
+    right: -320px;
+    color:#65626e ;
+}
+.ruler3{
+    width: 50px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -240px;
+    right: -340px;
+}
+.conlogo3{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(0, 100%, 82%);
+    position: relative;
+    top: -215px;
+    left: 378px;
+    border: #daffec;
+    border-radius: 5px;
+ 
+}
+.stologo{
+    position: relative;
+    top: 8px;
+    left: 13px;
+    color: #ff0000;
+}
+.store{
+    
+    position: relative;
+    top: -254px;
+    right: -424px;
+    color:#65626e ;
+}
+
+.content3{
+    background-color: white;
+    width: 48%;
+    height: 40%;
+    position: relative;
+    top: 70px;
+    left: 220px;
+    border: white;
+    border-radius:10px ;
+    
+}
+
+
+.content4{
+    width: 23%;
+    height: 35%;
+    position: relative;
+    top: 100px;
+    left: 220px;
+    background-color: rgb(255, 255, 255);
+    border: white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.boxes{
+    position: relative;
+    top: -37px;
+    left: 135px;
+    width: 100%;
+    height: 100px;
+}
+.li{
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
+.red{color: red;}
+.blue{color: blue;}
+.grey{color: grey;}
+
+.tex{
+    position: relative;
+    left: 18px;
+    top: 6px;
+}
+
+.tex1{
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+}
+.tex2{
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+
+.content5{
+    width: 23%;
+    height: 227px;
+    position: relative;
+    bottom: 120px;
+    left: 495px;
+    background-color: rgb(255, 255, 255);
+    border: white;
+    border-radius: 10px;
+    
+}
+.texlogo{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(213, 100%, 87%);
+    position: relative;
+    top: 15px;
+    left: 0px;
+    border: #daffec;
+    border-radius: 5px;
+}
+.userlogo1{
+    position: relative;
+    top: 8px;
+    left: 13px;
+    color: #0095ff;
+}
+.texx{
+    position: relative;
+    top: -27px;
+    right: -46px;
+
+}
+.hr{
+    width: 220px;
+    height: 5px;
+     background-color: hsl(0, 100%, 89%);
+    border-radius: 3px;
+    border:hsl(0, 100%, 88%) ;
+    position: relative;
+    top: 0px;
+    left: 6px;
+}
+.hr1{
+    width: 120px;
+    height: 5px;
+    background-color: hsl(27, 100%, 50%);
+    border-radius: 3px;
+    border:hsl(27, 100%, 50%) ;
+    position: relative;
+    top: -5px;
+    left: 6px;
+
+}
+.texp{
+    position: relative;
+    top: -10px;
+    left: 12px;
+}
+
+.hr2{
+    width: 220px;
+    height: 5px;
+     background-color: hsl(218, 100%, 85%);
+    border-radius: 3px;
+    border:hsl(218, 100%, 85%) ;
+    position: relative;
+    top: 15px;
+    left: 6px;
+}
+.hr3{
+    width: 170px;
+    height: 5px;
+    background-color: hsl(243, 100%, 50%);
+    border-radius: 3px;
+    border:hsl(228, 100%, 50%) ;
+    position: relative;
+    top: 10px;
+    left: 6px;
+
+}
+.usertx{
+    position: relative;
+    top: 10px;
+    left: 12px;
+}
+.content6{
+    width: 25%;
+    height: 462px;
+    position: relative;
+    bottom: 662px;
+    left: 797px;
+        background-color: rgb(255, 255, 255);
+        border: white;
+        border-radius: 10px;
+    
+}
+.act{
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.circle{
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    background-color: gainsboro;
+    border: gainsboro;
+    border-radius: 100px;
+    width: 15%;
+    height: 9%;
+}
+.circle1{
+    position: relative;
+    top: 13px;
+    left: 13px;
+}
+.para{
+    position: relative;
+    top: 40px;
+    left: 45px;
+}
+.hrr{
+    width: 90%;
+    position: relative;
+    top: 70px;
+    left: 15px;
+}
+.circle2{
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 20px;
+    background-color: gainsboro;
+    border: gainsboro;
+    border-radius: 100px;
+    width: 15%;
+    height: 9%;
+    opacity: 0.5;
+}
+.circle3{
+    position: relative;
+    top: 13px;
+    left: 13px;
+    opacity: 0.5;
+}
+.para1{
+    position: relative;
+    top: 102px;
+    left: 45px;
+    opacity: 0.5;
+}
+.boxes3{
+    position: relative;
+    top: -398px;
+    left: 898px;
+    white-space: nowrap;
+}

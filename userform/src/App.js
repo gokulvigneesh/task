@@ -1,12 +1,13 @@
 import React from 'react';
-import TodoList1 from './TodoList1';
+import Form from './form';
 
 const App = () => {
   return (
-    <div className="app">
-      <TodoList1 />
+    <div className="App">
+      <Form />
     </div>
   );
 };
 
 export default App;
+;

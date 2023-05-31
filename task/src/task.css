@@ -1,0 +1,36 @@
+.navbar1 {
+    background-color: #ffa70e;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__container1 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar__brand1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar__link1 {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar__menu1 {
+    display: flex;
+  }
+  
+  .navbar__item1 {
+    margin-left: 10px;
+  }
+  
+  

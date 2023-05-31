@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchTodos, addTodo, editTodo, deleteTodo } from './action';
+import { connect } from 'react-redux';
+import { fetchTodos, addTodo, editTodo, deleteTodo } from '../actions/todoActions.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import './TodoList.css';
 
-function TodoList() {
-  const dispatch = useDispatch();
-  const todos = useSelector((state) => state.todos);
+function TodoList({ todos, fetchTodos, addTodo, editTodo, deleteTodo }) {
   const [newTodo, setNewTodo] = useState('');
   const [editedTodo, setEditedTodo] = useState({ id: null, title: '' });
   const [successMessage, setSuccessMessage] = useState('');
@@ -16,8 +14,8 @@ function TodoList() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    dispatch(fetchTodos());
-  }, [dispatch]);
+    fetchTodos();
+  }, [fetchTodos]);
 
   const handleInputChange = (event) => {
     setNewTodo(event.target.value);
@@ -26,7 +24,7 @@ function TodoList() {
   const handleAddTodo = () => {
     if (newTodo.trim() !== '') {
       setLoading(true);
-      dispatch(addTodo(newTodo))
+      addTodo(newTodo)
         .then(() => {
           setNewTodo('');
           setSuccessMessage('Added Successfully!');
@@ -50,7 +48,7 @@ function TodoList() {
   const handleUpdateTodo = () => {
     if (editedTodo.title.trim() !== '') {
       setLoading(true);
-      dispatch(editTodo(editedTodo.id, { title: editedTodo.title }))
+      editTodo(editedTodo.id, { title: editedTodo.title })
         .then(() => {
           setEditedTodo({ id: null, title: '' });
           setSuccessMessage('Updated Successfully!');
@@ -72,14 +70,12 @@ function TodoList() {
   };
 
   const confirmDelete = () => {
-    dispatch(deleteTodo(deleteConfirmationId))
+    deleteTodo(deleteConfirmationId)
       .then(() => {
         setDeleteConfirmationId(null);
-        
       })
       .catch((error) => {
         console.error(error);
-       
       });
   };
 
@@ -160,4 +156,16 @@ function TodoList() {
   );
 }
 
-export default TodoList;
+const mapStateToProps = (state) => ({
+  todos: state.todos,
+});
+
+const mapDispatchToProps = {
+  fetchTodos,
+  addTodo,
+  editTodo,
+  deleteTodo,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
+

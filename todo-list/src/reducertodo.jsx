@@ -1,41 +1,36 @@
-import {
-  FETCH_TODOS_SUCCESS,
-  ADD_TODO_SUCCESS,
-  EDIT_TODO_SUCCESS,
-  DELETE_TODO_SUCCESS,
-} from './action';
+import { ADD_TODO, UPDATE_TODO, DELETE_TODO, FETCH_TODOS } from './action/actions/types';
 
 const initialState = {
   todos: [],
 };
 
-const reducer = (state = initialState, action) => {
+const todoReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_TODOS_SUCCESS:
+    case FETCH_TODOS:
       return {
         ...state,
         todos: action.payload,
       };
-      case ADD_TODO_SUCCESS:
+    case ADD_TODO:
       return {
-      ...state,
-      todos: [...state.todos, action.payload],
+        ...state,
+        todos: [...state.todos, action.payload],
       };
-      case EDIT_TODO_SUCCESS:
+    case UPDATE_TODO:
       return {
-      ...state,
-      todos: state.todos.map((todo) =>
-      todo.id === action.payload.id ? action.payload : todo
-      ),
+        ...state,
+        todos: state.todos.map((todo) =>
+          todo.id === action.payload.id ? { ...todo, ...action.payload.data } : todo
+        ),
       };
-      case DELETE_TODO_SUCCESS:
+    case DELETE_TODO:
       return {
-      ...state,
-      todos: state.todos.filter((todo) => todo.id !== action.payload),
+        ...state,
+        todos: state.todos.filter((todo) => todo.id !== action.payload),
       };
-      default:
+    default:
       return state;
-      }
-      };
-      
-      export default reducer;
+  }
+};
+
+export default todoReducer;
